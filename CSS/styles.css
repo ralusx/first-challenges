@@ -1,0 +1,122 @@
+:root {
+    --vryDrkBlue: hsl(233, 47%, 7%);
+    --drkDesatBlue: hsl(244, 38%, 16%);
+    --sftViolet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --slgtTransWhite1: hsla(0, 0%, 100%, 0.75);
+    /*Paragraph White */
+    --slgtTransWhite2: hsla(0, 0%, 100%, 0.6)
+    /*Stat Heading White */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* index
+1. Typography
+2. Card
+3. Desktop
+4. footer
+
+*/
+
+/* 1. Typography */
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--vryDrkBlue);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--white);
+    display: block;
+    margin: 0.5rem auto;
+}
+
+b {
+    color: var(--sftViolet);
+}
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--slgtTransWhite1);
+    margin: 1.5rem auto;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    filter: opacity(0.3) drop-shadow(0 0 0 rgb(255, 0, 255));
+}
+
+/* 2. Card */
+
+main {
+    max-width: 80%;
+    background-color: var(--drkDesatBlue);
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+div {
+    max-width: 75%;
+    margin: 1rem auto;
+}
+
+/* 3. Desktop */
+
+@media screen and (min-width: 876px) {
+    main {
+        max-width: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    img {
+       max-width: 50%;
+       border-top-right-radius: 0.5rem;
+       border-bottom-right-radius: 0.5rem;
+       border-top-left-radius: 0;
+   }
+   p {
+       display: inline-block;
+       margin: 1rem;
+   }
+}
+
+/*
+4. Footer
+*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    margin: 1rem;
+}
+
+.attribution a {
+    color: var(--sftViolet);
+}
